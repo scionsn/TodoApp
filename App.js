@@ -9,8 +9,9 @@ class App extends Component{
   }
   adddata=(data)=>{
 data.id=Math.random();
-let list={...this.state.list,data}
-
+let list=this.state.list
+list.push(data);
+    console.log(list);
 this.setState({
   list
 })
